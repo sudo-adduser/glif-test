@@ -97,3 +97,4 @@ The config values are environmental variables so I installed the `.env` package 
 ### Notes:
 
 For tracking transaction status I have a goroutine with exponential backoff checking the transaction status. The current initial interval is set to a minute so I didn't eat up my free API credits. I didn't make the backoff configurable but you can change the value in the `trackTransactionStatus` function in the `glif-test/blockchain/wallet.go` file if you're impatient.
+
